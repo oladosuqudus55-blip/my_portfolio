@@ -6,38 +6,46 @@
   const navMenu = document.getElementById("nav-menu");
   const navLinks = document.querySelectorAll(".nav__link");
   const yearEl = document.getElementById("year");
+  const revealEls = document.querySelectorAll(".reveal");
 
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
 
-  function onScroll() {
-    header.classList.toggle("header--scrolled", window.scrollY > 20);
+  if (header) {
+    function onScroll() {
+      header.classList.toggle("header--scrolled", window.scrollY > 20);
+    }
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
   }
 
-  window.addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
-
-  navToggle.addEventListener("click", function () {
-    const expanded = navToggle.getAttribute("aria-expanded") === "true";
-    navToggle.setAttribute("aria-expanded", String(!expanded));
-    navMenu.classList.toggle("open");
-  });
+  if (navToggle && navMenu) {
+    navToggle.addEventListener("click", function () {
+      const expanded = navToggle.getAttribute("aria-expanded") === "true";
+      navToggle.setAttribute("aria-expanded", String(!expanded));
+      navMenu.classList.toggle("open");
+    });
+  }
 
   navLinks.forEach(function (link) {
     link.addEventListener("click", function () {
-      navToggle.setAttribute("aria-expanded", "false");
-      navMenu.classList.remove("open");
+      if (navToggle) {
+        navToggle.setAttribute("aria-expanded", "false");
+      }
+      if (navMenu) {
+        navMenu.classList.remove("open");
+      }
     });
   });
 
-  const revealEls = document.querySelectorAll(
-    ".section__title, .about, .project-card, .skills__group, .contact__text, .btn--large, .contact__social"
-  );
-
-  revealEls.forEach(function (el) {
-    el.classList.add("reveal");
-  });
+  if (!("IntersectionObserver" in window)) {
+    revealEls.forEach(function (el) {
+      el.classList.add("visible");
+    });
+    return;
+  }
 
   const observer = new IntersectionObserver(
     function (entries) {
@@ -48,7 +56,7 @@
         }
       });
     },
-    { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
+    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
   );
 
   revealEls.forEach(function (el) {

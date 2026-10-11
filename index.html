@@ -1,237 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio — developer, designer, and builder.">
-  <title>QUDEZMANE | Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <header class="header" id="header">
-    <nav class="nav container">
-      <a href="#" class="nav__logo">&lt; QUDEZMANE /&gt;</a>
-      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <ul class="nav__menu" id="nav-menu">
-        <li><a href="#about" class="nav__link">About</a></li>
-        <li><a href="#projects" class="nav__link">Projects</a></li>
-        <li><a href="#skills" class="nav__link">Skills</a></li>
-        <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Qudezmane builds web experiences and creates content around the technologies shaping the future."
+    />
+    <meta property="og:title" content="Qudezmane | Full-Stack Developer & Creator" />
+    <meta
+      property="og:description"
+      content="I build web experiences and create content around the technologies shaping the future."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://myportfolio-rose-psi-89.vercel.app/" />
+    <meta property="og:image" content="images/My picture.png" />
+    <link rel="canonical" href="https://myportfolio-rose-psi-89.vercel.app/" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <title>Qudezmane | Full-Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a href="#top" class="nav__logo" aria-label="Qudezmane home">&lt; Qudezmane /&gt;</a>
 
-  <main>
-    <section class="hero" id="hero">
-      <div class="hero__bg"></div>
-      <div class="container hero__content">
-        <p class="hero__greeting">Hello, I'm</p>
-        <h1 class="hero__title"> OLADOSU QUDUS AKINSOLA</h1>
-        <p class="hero__subtitle">I build thoughtful digital experiences — from clean interfaces to reliable backends.</p>
-        <div class="hero__actions">
-          <a href="#projects" class="btn btn--primary">View my work</a>
-          <a href="#contact" class="btn btn--ghost">Get in touch</a>
-        </div>
-        <div class="hero__meta">
-          <span class="hero__status">
-            <span class="hero__status-dot"></span>
-            Available for work
-          </span>
-        </div>
-      </div>
-    </section>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-    <section class="section" id="about">
-      <div class="container">
-        <h2 class="section__title"><span class="section__number">01.</span> About Me</h2>
-        <div class="about">
-          <div class="about__text">
-            <p>
-              I'm a developer passionate about crafting accessible, performant products.
-              I enjoy turning complex problems into simple, elegant solutions.
-            </p>
-            <p>
-              When I'm not coding, you'll find me exploring new tools, contributing to open source,
-              or sketching ideas for the next side project.
-            </p>
-            <p>Here are a few technologies I've been working with lately:</p>
-            <ul class="about__list">
-              <li>JavaScript / TypeScript</li>
-              <li>React &amp; Next.js</li>
-              <li>Node.js</li>
-              <li>Python</li>
-              <li>PostgreSQL</li>
-            </ul>
-          </div>
-          <div class="about__image">
-            <div class="about__image-frame">
-              <div class="about__image-placeholder" aria-hidden="true">
-                <img src="images/My picture.png" alt="My photo" class="profile-pic">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--alt" id="projects">
-      <div class="container">
-        <h2 class="section__title"><span class="section__number">02.</span> Featured Projects</h2>
-        <div class="projects">
-          <article class="project-card">
-            <div class="project-card__header">
-              <svg class="project-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/>
-              </svg>
-              <div class="project-card__links">
-                <a href="#" aria-label="GitHub repository" target="_blank" rel="noopener noreferrer">
-                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.395-.135-.345-.72-1.395-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                </a>
-                <a href="#" aria-label="Live demo" target="_blank" rel="noopener noreferrer">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-                </a>
-              </div>
-            </div>
-            <h3 class="project-card__title">Project One</h3>
-            <p class="project-card__desc">A full-stack web app with real-time updates, authentication, and a polished UI. Built to scale.</p>
-            <ul class="project-card__tags">
-              <li>React</li>
-              <li>Node.js</li>
-              <li>PostgreSQL</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <div class="project-card__header">
-              <svg class="project-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/>
-              </svg>
-              <div class="project-card__links">
-                <a href="#" aria-label="GitHub repository" target="_blank" rel="noopener noreferrer">
-                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.395-.135-.345-.72-1.395-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                </a>
-                <a href="#" aria-label="Live demo" target="_blank" rel="noopener noreferrer">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-                </a>
-              </div>
-            </div>
-            <h3 class="project-card__title">Project Two</h3>
-            <p class="project-card__desc">An open-source CLI tool that automates repetitive workflows and saves hours every week.</p>
-            <ul class="project-card__tags">
-              <li>Python</li>
-              <li>CLI</li>
-              <li>Automation</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <div class="project-card__header">
-              <svg class="project-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/>
-              </svg>
-              <div class="project-card__links">
-                <a href="#" aria-label="GitHub repository" target="_blank" rel="noopener noreferrer">
-                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.395-.135-.345-.72-1.395-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                </a>
-                <a href="#" aria-label="Live demo" target="_blank" rel="noopener noreferrer">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-                </a>
-              </div>
-            </div>
-            <h3 class="project-card__title">Project Three</h3>
-            <p class="project-card__desc">A mobile-first landing page with smooth animations and a focus on conversion and performance.</p>
-            <ul class="project-card__tags">
-              <li>HTML/CSS</li>
-              <li>JavaScript</li>
-              <li>Design</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="skills">
-      <div class="container">
-        <h2 class="section__title"><span class="section__number">03.</span> Skills</h2>
-        <div class="skills">
-          <div class="skills__group">
-            <h3 class="skills__heading">Frontend</h3>
-            <div class="skills__tags">
-              <span class="skill-tag">HTML</span>
-              <span class="skill-tag">CSS</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">TypeScript</span>
-              <span class="skill-tag">React</span>
-              <span class="skill-tag">Next.js</span>
-            </div>
-          </div>
-          <div class="skills__group">
-            <h3 class="skills__heading">Backend</h3>
-            <div class="skills__tags">
-              <span class="skill-tag">Node.js</span>
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">REST APIs</span>
-              <span class="skill-tag">PostgreSQL</span>
-              <span class="skill-tag">MongoDB</span>
-            </div>
-          </div>
-          <div class="skills__group">
-            <h3 class="skills__heading">Tools</h3>
-            <div class="skills__tags">
-              <span class="skill-tag">Git</span>
-              <span class="skill-tag">Docker</span>
-              <span class="skill-tag">Figma</span>
-              <span class="skill-tag">VS Code</span>
-              <span class="skill-tag">Linux</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--contact" id="contact">
-      <div class="container">
-        <h2 class="section__title section__title--center"><span class="section__number">04.</span> Get In Touch</h2>
-        <p class="contact__text">
-          I'm currently open to new opportunities and interesting collaborations.
-          Whether you have a question or just want to say hi, my inbox is always open.
-        </p>
-        <a href="mailto:hello@example.com" class="btn btn--primary btn--large">Say Hello</a>
-        <ul class="contact__social">
-          <li>
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.395-.135-.345-.72-1.395-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-            </a>
-          </li>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#featured-work" class="nav__link">Creative Work</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
         </ul>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__content reveal">
+            <p class="hero__eyebrow">Full-Stack Developer · Video Content Creator · Web3 Enthusiast</p>
+            <h1 class="hero__title">Qudezmane</h1>
+            <p class="hero__lead">
+              I build web experiences and create content around the technologies shaping the future.
+            </p>
+            <div class="hero__actions">
+              <a href="#projects" class="btn btn--primary">Explore My Work</a>
+              <a href="#contact" class="btn btn--ghost">Get In Touch</a>
+            </div>
+
+            <ul class="social-row" aria-label="Social links">
+              <li>
+                <a href="https://x.com/qudezmane" target="_blank" rel="noopener noreferrer" aria-label="X profile">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2h3.3l-7.2 8.2 8.5 11.6H16.2l-5.3-7.2-6.1 7.2H1.4l7.7-8.8L1.2 2h7.8l4.8 6.5L18.9 2zm-1.2 17.5h1.8L7.1 3.6H5.3l12.4 15.9Z"/></svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/oladosuqudus/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5ZM8 19H5V8h3v11ZM6.5 6.73A1.74 1.74 0 1 1 6.5 3.25a1.74 1.74 0 0 1 0 3.48ZM19 19h-3v-5.6c0-1.34-.03-3.06-1.86-3.06-1.87 0-2.16 1.46-2.16 2.96V19h-3V8h2.89v1.5h.04c.4-.77 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.6V19Z"/></svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://t.me/Qudezmane" target="_blank" rel="noopener noreferrer" aria-label="Telegram username">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0Zm5.5 6.52-1.68 7.94c-.13.6-.49.75-1 .47l-2.75-2.02-1.32 1.27c-.15.15-.28.28-.56.28l.2-2.87 5.23-4.72c.23-.2-.05-.31-.35-.11L8.14 12.8l-2.75-.86c-.6-.19-.61-.6.13-.89l10.77-4.16c.5-.19.95.12.78.88Z"/></svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/2348146826031" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp contact">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.6 11.6 0 0 0 12 0C5.4 0 .1 5.3.1 12a11.8 11.8 0 0 0 1.6 5.8L0 24l6.5-1.7a12 12 0 0 0 5.7 1.6h.1c6.6 0 12-5.3 12-12a11.7 11.7 0 0 0-3.8-8.4ZM12 21.8a9.6 9.6 0 0 1-4.9-1.3l-.4-.2-3.8 1 1-3.7-.2-.4A9.7 9.7 0 1 1 12 21.8Zm5.3-7.2c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.1-.7.1-.2.2-.8.9-1 .9-.2.2-.4.2-.7.1a7.7 7.7 0 0 1-2.3-1.4c-.8-.8-1.4-1.7-1.5-2-.1-.3 0-.5.2-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.6 0-.1-.7-1.7-1-2.4-.2-.5-.4-.4-.7-.4h-.6c-.2 0-.5.1-.7.3a3.1 3.1 0 0 0-1 2.3c0 1.4 1 2.7 1.2 2.9.2.2 2.1 3.3 5.1 4.7.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.4.1-1.5-.1-.2-.3-.2-.6-.4Z"/></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero__visual reveal" aria-label="Profile preview">
+            <div class="signal-card signal-card--main">
+              <div class="signal-card__header">
+                <span class="signal-card__dot"></span>
+                <span>build</span>
+              </div>
+              <div class="signal-card__body">
+                <div class="signal-card__row">
+                  <span>frontend</span>
+                  <strong>product</strong>
+                </div>
+                <div class="signal-card__row">
+                  <span>creator</span>
+                  <strong>story</strong>
+                </div>
+                <div class="signal-card__row">
+                  <span>web3</span>
+                  <strong>future</strong>
+                </div>
+              </div>
+            </div>
+            <div class="signal-card signal-card--floating">
+              <span class="signal-card__tag">Available</span>
+              <strong>for digital products & creative collaborations</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-heading__eyebrow">01</p>
+            <h2>About Me</h2>
+          </div>
+
+          <div class="about">
+            <div class="about__text reveal">
+              <p>
+                I’m a software developer with a sharp eye for interface design, product thinking, and the
+                systems behind great digital experiences.
+              </p>
+              <p>
+                I build web experiences and shape thoughtful interactions, from clean frontend interfaces to
+                reliable backend logic and polished user journeys.
+              </p>
+              <p>I am a video content creator and a Web3 enthusiast.</p>
+              <p>
+                I’m interested in how software, media, and emerging technology come together to create
+                compelling digital culture.
+              </p>
+            </div>
+
+            <div class="about__portrait reveal">
+              <img src="images/My picture.png" alt="Portrait of Qudezmane" loading="lazy" decoding="async" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="featured-work">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-heading__eyebrow">02</p>
+            <h2>Creative Work</h2>
+          </div>
+
+          <div class="video-grid">
+            <article class="video-card reveal">
+              <div class="video-card__media">
+                <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true">
+                  <a href="https://x.com/qudezmane/status/2106639113205977230">View this post on X</a>
+                </blockquote>
+              </div>
+              <div class="video-card__body">
+                <div class="video-card__meta">
+                  <span class="video-card__badge">X Video</span>
+                  <span class="video-card__time">Under 2 minutes</span>
+                </div>
+                <h3>Why GenLayer powers part of Rally’s verification layer</h3>
+                <p>
+                  A sharp explainer on the connection between GenLayer and Rally, breaking down why verification
+                  infrastructure matters—and how the two fit together in a practical Web3 context.
+                </p>
+                <a href="https://x.com/qudezmane/status/2106639113205977230" target="_blank" rel="noopener noreferrer" class="text-link">Watch on X</a>
+              </div>
+            </article>
+
+            <article class="video-card reveal">
+              <div class="video-card__media">
+                <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true">
+                  <a href="https://x.com/qudezmane/status/2101200882507354145">View this post on X</a>
+                </blockquote>
+              </div>
+              <div class="video-card__body">
+                <div class="video-card__meta">
+                  <span class="video-card__badge">X Video</span>
+                  <span class="video-card__time">Under 3 minutes</span>
+                </div>
+                <h3>How FUD Markets and GenLayer work together</h3>
+                <p>
+                  A concise breakdown of prediction markets, outcome resolution, and why GenLayer enters the
+                  conversation when a market closes and needs a trusted result.
+                </p>
+                <a href="https://x.com/qudezmane/status/2101200882507354145" target="_blank" rel="noopener noreferrer" class="text-link">Watch on X</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-heading__eyebrow">03</p>
+            <h2>Selected Projects</h2>
+          </div>
+
+          <article class="project-showcase reveal">
+            <div class="project-showcase__media" aria-label="Portfolio website preview">
+              <div class="browser-window">
+                <div class="browser-window__bar">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="browser-window__content">
+                  <div class="browser-window__line browser-window__line--long"></div>
+                  <div class="browser-window__line"></div>
+                  <div class="browser-window__line browser-window__line--short"></div>
+                  <div class="browser-window__panel">
+                    <span>Q</span>
+                    <span>Portfolio</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-showcase__content">
+              <p class="project-showcase__eyebrow">Personal portfolio</p>
+              <h3>Portfolio Website</h3>
+              <p>
+                A premium one-page portfolio built to present my work across web development, creative media,
+                and emerging technologies. It combines clear navigation, editorial typography, and a modern dark
+                interface that feels polished without losing clarity.
+              </p>
+              <ul class="feature-list">
+                <li>Responsive layout for desktop, tablet, and mobile</li>
+                <li>Accessible, keyboard-friendly navigation and focus states</li>
+                <li>Refined motion and interaction patterns with reduced-motion support</li>
+              </ul>
+              <div class="tag-list" aria-label="Technology stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Responsive Design</span>
+              </div>
+              <div class="project-showcase__links">
+                <a href="https://myportfolio-rose-psi-89.vercel.app/" target="_blank" rel="noopener noreferrer">Live site</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="skills">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-heading__eyebrow">04</p>
+            <h2>Skills</h2>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skills-group reveal">
+              <h3>Frontend</h3>
+              <div class="tag-list">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>TypeScript</span>
+                <span>React</span>
+                <span>Next.js</span>
+              </div>
+            </div>
+
+            <div class="skills-group reveal">
+              <h3>Backend & APIs</h3>
+              <div class="tag-list">
+                <span>Node.js</span>
+                <span>Python</span>
+                <span>REST APIs</span>
+                <span>PostgreSQL</span>
+                <span>MongoDB</span>
+              </div>
+            </div>
+
+            <div class="skills-group reveal">
+              <h3>Tools & Deployment</h3>
+              <div class="tag-list">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Vercel</span>
+                <span>Docker</span>
+                <span>VS Code</span>
+                <span>Linux</span>
+              </div>
+            </div>
+
+            <div class="skills-group reveal">
+              <h3>Creative & Storytelling</h3>
+              <div class="tag-list">
+                <span>Video Editing</span>
+                <span>Short-form Storytelling</span>
+                <span>Visual Design</span>
+                <span>Content Strategy</span>
+              </div>
+            </div>
+
+            <div class="skills-group reveal">
+              <h3>Web3 & Emerging Tech</h3>
+              <div class="tag-list">
+                <span>Web3</span>
+                <span>Blockchain</span>
+                <span>GenLayer</span>
+                <span>FUD Markets</span>
+                <span>Rally</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--contact" id="contact">
+        <div class="container">
+          <div class="section-heading reveal section-heading--center">
+            <p class="section-heading__eyebrow">05</p>
+            <h2>Get In Touch</h2>
+          </div>
+
+          <p class="contact__text reveal">
+            I’m open to product development, creative collaborations, and conversations around software,
+            storytelling, and the future of the web.
+          </p>
+
+          <div class="contact-grid reveal">
+            <a class="contact-card" href="https://wa.me/2348146826031" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.6 11.6 0 0 0 12 0C5.4 0 .1 5.3.1 12a11.8 11.8 0 0 0 1.6 5.8L0 24l6.5-1.7a12 12 0 0 0 5.7 1.6h.1c6.6 0 12-5.3 12-12a11.7 11.7 0 0 0-3.8-8.4ZM12 21.8a9.6 9.6 0 0 1-4.9-1.3l-.4-.2-3.8 1 1-3.7-.2-.4A9.7 9.7 0 1 1 12 21.8Zm5.3-7.2c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.1-.7.1-.2.2-.8.9-1 .9-.2.2-.4.2-.7.1a7.7 7.7 0 0 1-2.3-1.4c-.8-.8-1.4-1.7-1.5-2-.1-.3 0-.5.2-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.6 0-.1-.7-1.7-1-2.4-.2-.5-.4-.4-.7-.4h-.6c-.2 0-.5.1-.7.3a3.1 3.1 0 0 0-1 2.3c0 1.4 1 2.7 1.2 2.9.2.2 2.1 3.3 5.1 4.7.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.4.1-1.5-.1-.2-.3-.2-.6-.4Z"/></svg>
+              <span>WhatsApp</span>
+              <strong>+2348146826031</strong>
+            </a>
+
+            <a class="contact-card" href="https://x.com/qudezmane" target="_blank" rel="noopener noreferrer" aria-label="Visit X profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2h3.3l-7.2 8.2 8.5 11.6H16.2l-5.3-7.2-6.1 7.2H1.4l7.7-8.8L1.2 2h7.8l4.8 6.5L18.9 2zm-1.2 17.5h1.8L7.1 3.6H5.3l12.4 15.9Z"/></svg>
+              <span>X</span>
+              <strong>@qudezmane</strong>
+            </a>
+
+            <a class="contact-card" href="https://t.me/Qudezmane" target="_blank" rel="noopener noreferrer" aria-label="Message on Telegram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0Zm5.5 6.52-1.68 7.94c-.13.6-.49.75-1 .47l-2.75-2.02-1.32 1.27c-.15.15-.28.28-.56.28l.2-2.87 5.23-4.72c.23-.2-.05-.31-.35-.11L8.14 12.8l-2.75-.86c-.6-.19-.61-.6.13-.89l10.77-4.16c.5-.19.95.12.78.88Z"/></svg>
+              <span>Telegram</span>
+              <strong>@Qudezmane</strong>
+            </a>
+
+            <a class="contact-card" href="https://www.linkedin.com/in/oladosuqudus/" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5ZM8 19H5V8h3v11ZM6.5 6.73A1.74 1.74 0 1 1 6.5 3.25a1.74 1.74 0 0 1 0 3.48ZM19 19h-3v-5.6c0-1.34-.03-3.06-1.86-3.06-1.87 0-2.16 1.46-2.16 2.96V19h-3V8h2.89v1.5h.04c.4-.77 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.6V19Z"/></svg>
+              <span>LinkedIn</span>
+              <strong>Oladosu Qudus</strong>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>Designed &amp; built by <span>Qudezmane</span></p>
+        <p class="footer__year">&copy; <span id="year"></span></p>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer class="footer">
-    <div class="container">
-      <p>Designed &amp; built by <a href="#">Oladosu qudus Akinsola</a></p>
-      <p class="footer__year">&copy; <span id="year"></span></p>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
